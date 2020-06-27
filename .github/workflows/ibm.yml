@@ -29,7 +29,7 @@ jobs:
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID }}
       run: |
-        ./IBM_Cloud_CLI/ibmcloud target -g 1480410d4aa6466aa1f7e4739c20c3cc
+        ./IBM_Cloud_CLI/ibmcloud target -g "1480410d4aa6466aa1f7e4739c20c3cc"
         ./IBM_Cloud_CLI/ibmcloud target --cf
         ./IBM_Cloud_CLI/ibmcloud cf install
     - name: Restart IBM Cloud
